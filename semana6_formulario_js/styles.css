@@ -1,0 +1,77 @@
+input::-ms-reveal,
+input::-ms-clear {
+    display: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1518091043644-c1d4457512c6");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+form {
+    background: rgba(255,255,255,0.95);
+    padding: 25px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+input.valido {
+    border-color: green;
+}
+
+input.invalido {
+    border-color: red;
+}
+
+small {
+    font-size: 12px;
+}
+
+small.error {
+    color: red;
+}
+
+small.ok {
+    color: green;
+}
+
+.password-box {
+    display: flex;
+    align-items: center;
+}
+
+.eye {
+    margin-left: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
